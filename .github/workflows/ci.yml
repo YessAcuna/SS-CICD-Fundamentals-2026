@@ -44,7 +44,7 @@ jobs:
           python-version: '3.12'
 
       - name: Scan for secrets
-        users: gitleaks/gitleaks-action@v3
+        uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   
